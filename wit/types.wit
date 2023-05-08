@@ -5,17 +5,17 @@ default interface types {
         nanoseconds: u32,
     }
 
-    // Configuration that the plugin receives from the host.
-    record plugin-context {
-        // Timestamp of the last plugin invocation.
+    // Configuration that the widget receives from the host.
+    record widget-context {
+        // Timestamp of the last widget invocation.
         last-invocation: datetime,
-        // Plugin specific configuration serialized as JSON
-        // Must comply with the plugin's config schema obtained by get-config-schema
+        // Widget specific configuration serialized as JSON
+        // Must comply with the widget's config schema obtained by get-config-schema
         config: string
     }
 
-    // The result of a plugin invocation.
-    record plugin-result {
+    // The result of a widget invocation.
+    record widget-result {
         // Serialized as JSON
         data: string
     }

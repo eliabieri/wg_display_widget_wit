@@ -1,4 +1,4 @@
-// HTTP interface for plugins.
+// HTTP interface for widgets.
 // Allows them to make HTTP/HTTPS requests.
 default interface http {
     type status = u16

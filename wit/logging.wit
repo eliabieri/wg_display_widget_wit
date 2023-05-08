@@ -1,4 +1,4 @@
-// Allows plugins to write logs to the host
+// Allows widgets to write logs to the host
 default interface logging {
     enum level {
         debug,
