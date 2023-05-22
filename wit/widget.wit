@@ -14,6 +14,9 @@ default world widget {
     export get-version: func() -> string
     // Return the config JSON schema string
     export get-config-schema: func() -> string
+    // Returns the run update cycle in seconds.
+    // With this, widgets can control how frequently they shall be updated.
+    export get-run-update-cycle-seconds: func() -> u32
     // Invoke the widget with the given context
     export run: func(context: widget-context) -> widget-result
 }
