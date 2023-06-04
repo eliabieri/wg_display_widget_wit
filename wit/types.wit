@@ -16,7 +16,8 @@ default interface types {
 
     // The result of a widget invocation.
     record widget-result {
-        // Serialized as JSON
+        // Formatted string
+        // Can also be an error explaining what went wrong for the user
         data: string
     }
 }
