@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install wit-bindgen CLI
-        run: cargo install --git https://github.com/bytecodealliance/wit-bindgen wit-bindgen-cli
+        run: cargo install --git https://github.com/bytecodealliance/wit-bindgen --rev 0b5ed6390c95cc864bada1b11b46cbbe2a24542a wit-bindgen-cli
       - name: Build WIT docs
         run: wit-bindgen markdown wit/
       - name: Rename WIT docs
