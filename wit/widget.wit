@@ -1,5 +1,6 @@
 // WIT interface for the interaction between the host application and widgets
-// Inspired by work-in-progress WASI Preview 2 WIT definitions (https://github.com/bytecodealliance/preview2-prototyping/tree/main/wit)
+// Inspired by work-in-progress WASI Preview 2 WIT definitions
+// (https://github.com/bytecodealliance/preview2-prototyping/tree/main/wit)
 default world widget {
     use pkg.types.{widget-context, widget-result}
 
