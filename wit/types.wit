@@ -1,4 +1,4 @@
-default interface types {
+interface types {
     record datetime {
         // Seconds since epoch
         seconds: u64,

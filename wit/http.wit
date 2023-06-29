@@ -1,6 +1,6 @@
 // HTTP interface for widgets.
 // Allows them to make HTTP/HTTPS requests.
-default interface http {
+interface http {
     type status = u16
 
     variant method {

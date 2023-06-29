@@ -1,5 +1,5 @@
-default interface clocks {
-    use pkg.types.{datetime}
+interface clocks {
+    use types.{datetime}
 
     now: func() -> datetime
 }

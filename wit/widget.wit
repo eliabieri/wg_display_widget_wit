@@ -1,13 +1,15 @@
+package widget:widget
+
 // WIT interface for the interaction between the host application and widgets
 // Inspired by work-in-progress WASI Preview 2 WIT definitions
 // (https://github.com/bytecodealliance/preview2-prototyping/tree/main/wit)
-default world widget {
-    use pkg.types.{widget-context, widget-result}
+world widget {
+    use types.{widget-context, widget-result}
 
-    import http: pkg.http
-    import random: pkg.random
-    import clocks: pkg.clocks
-    import logging: pkg.logging
+    import http
+    import random
+    import clocks
+    import logging
 
     // Return the name of the widget
     export get-name: func() -> string
