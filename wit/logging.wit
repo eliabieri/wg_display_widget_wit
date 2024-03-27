@@ -7,5 +7,5 @@ interface logging {
         error
     }
 
-    log: func(level: level, context: string, message: string)
+    log: func(level: level, context: string, message: string);
 }

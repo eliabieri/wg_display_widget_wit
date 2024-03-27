@@ -1,7 +1,7 @@
 // HTTP interface for widgets.
 // Allows them to make HTTP/HTTPS requests.
 interface http {
-    type status = u16
+    type status = u16;
 
     variant method {
         get,
@@ -25,5 +25,5 @@ interface http {
         url: string,
         // Only relevant for POST/PUT requests
         body: option<list<u8>>,
-    ) -> result<response>
+    ) -> result<response>;
 }
